@@ -1,10 +1,18 @@
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
 
+var src = {
+  js: 'canvas.js'
+};
+
 gulp.task('browserify', function () {
-  gulp.src('./canvas.js')
+  gulp.src(src.js)
     .pipe(browserify())
-    .pipe(gulp.dest('./build/canvas.js'));
+    .pipe(gulp.dest('./build'));
 });
 
-gulp.task('default', ['browserify']);
+gulp.task('watch', function () {
+  gulp.watch(src.js, ['browserify']);
+});
+
+gulp.task('default', ['browserify', 'watch']);
