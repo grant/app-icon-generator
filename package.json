@@ -1,0 +1,27 @@
+{
+  "name": "app-icon-generator",
+  "version": "0.0.0",
+  "description": "A tool to generate lots and lots of app icon images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grant/app-icon-generator.git"
+  },
+  "keywords": [
+    "app",
+    "icon",
+    "generator",
+    "iphone",
+    "iOS"
+  ],
+  "author": "Grant Timmerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grant/app-icon-generator/issues"
+  },
+  "homepage": "https://github.com/grant/app-icon-generator"
+}

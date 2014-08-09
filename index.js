@@ -1,3 +1,6 @@
+var imageSizes = [58, 80, 120];
+var numImages = 100;
+
 function canvasToImg() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
