@@ -4,7 +4,8 @@
   "description": "A tool to generate lots and lots of app icon images.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify canvas.js > ./build/canvas.js"
   },
   "private": true,
   "repository": {
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/grant/app-icon-generator/issues"
   },
-  "homepage": "https://github.com/grant/app-icon-generator"
+  "homepage": "https://github.com/grant/app-icon-generator",
+  "dependencies": {
+    "color-rainbow": "0.0.0"
+  }
 }
