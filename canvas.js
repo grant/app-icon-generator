@@ -12,15 +12,16 @@ function canvasToImg() {
   var ctx = canvas.getContext("2d");
 
   var colors = Rainbow.create(numImages);
+  var imgData = {};
   for (var i = 0; i < numImages; ++i) {
     var color = colors[i].hexString();
     ctx.fillStyle = color;
     ctx.fillRect(0, 0, defaultImageSize, defaultImageSize);
 
     var url = canvas.toDataURL();
-    console.log(url);
+    imgData[i] = url;
   }
-    
+  console.log(JSON.stringify(imgData));
 
   // var newImg = document.createElement("img"); //create
   // newImg.src = url;
