@@ -3,19 +3,22 @@ var numImages = 100;
 
 var Rainbow = require('color-rainbow');
 
+var defaultImageSize = 800; //px
+
 function canvasToImg() {
   var canvas = document.getElementById("canvas");
+  canvas.style.width = defaultImageSize + 'px';
+  canvas.style.height = defaultImageSize + 'px';
   var ctx = canvas.getContext("2d");
 
   var colors = Rainbow.create(numImages);
   for (var i = 0; i < numImages; ++i) {
-    var color = '#' + colors[i].hexString();
+    var color = colors[i].hexString();
     ctx.fillStyle = color;
-    console.log(color);
-    // ctx.fillRect(10,10,30,30);
+    ctx.fillRect(0, 0, defaultImageSize, defaultImageSize);
 
-    // var url = canvas.toDataURL();
-    // console.log(url);
+    var url = canvas.toDataURL();
+    console.log(url);
   }
     
 

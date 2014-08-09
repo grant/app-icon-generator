@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify canvas.js > ./build/canvas.js"
+    "start": "browserify canvas.js > ./build/canvas.js"
   },
   "private": true,
   "repository": {
