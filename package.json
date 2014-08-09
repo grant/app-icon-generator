@@ -27,5 +27,9 @@
   "homepage": "https://github.com/grant/app-icon-generator",
   "dependencies": {
     "color-rainbow": "0.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-browserify": "^0.5.0"
   }
 }
