@@ -10,15 +10,14 @@ var defaultImageSize = 1024; //px
 // 
 var sizes = [58, 80, 120];
 var numImages = 100;
-var save = false;
+var save = true;
 
 function canvasToImg() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
   
-  var colors = Rainbow.create(numImages);
+  var colors = Rainbow.create(numImages * 1.2);
   var imgData = {};
-
   
   for (var j = 0; j < sizes.length; ++j) {
     var size = sizes[j];
