@@ -26,6 +26,9 @@ function canvasToImg() {
     document.body.appendChild(newImg);
   }
   var data = JSON.stringify(imgData);
+
+  var blob = new Blob([data], {type: "text/plain;charset=utf-8"});
+  saveAs(blob, "data.json");
 }
 
 canvasToImg();
