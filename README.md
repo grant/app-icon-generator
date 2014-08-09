@@ -20,3 +20,4 @@ A tool to generate lots and lots of app icon images.
 ## Developing
 
 - Run `gulp`
+- All generated files will be in the `build` folder

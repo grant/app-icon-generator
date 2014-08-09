@@ -1,9 +1,9 @@
-var imageSizes = [58, 80, 120];
 var numImages = 100;
 
 var Rainbow = require('color-rainbow');
 
-var defaultImageSize = 800; //px
+// The default image size should be pretty big. We will resize the images down later.
+var defaultImageSize = 1024; //px
 
 function canvasToImg() {
   var canvas = document.getElementById("canvas");
@@ -21,7 +21,7 @@ function canvasToImg() {
     var url = canvas.toDataURL();
     imgData[i] = url;
   }
-  console.log(JSON.stringify(imgData));
+  document.getElementById('data').value = JSON.stringify(imgData);
 
   // var newImg = document.createElement("img"); //create
   // newImg.src = url;
