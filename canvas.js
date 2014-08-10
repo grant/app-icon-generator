@@ -10,7 +10,7 @@ var defaultImageSize = 1024; //px
 // 
 var sizes = [58, 80, 120];
 var numImages = 100;
-var save = true;
+var save = false;
 
 function canvasToImg() {
   var canvas = document.getElementById("canvas");
@@ -29,9 +29,15 @@ function canvasToImg() {
     for (var i = 0; i < numImages; ++i) {
       var color = colors[i].hexString();
       var text = i + 1;
+      var fontsize = (scale * 900);
+      // Make the last one smaller and black
+      if (i === numImages - 1) {
+        fontsize *= 0.7;
+        color = '#222';
+      }
       ctx.fillStyle = color;
       ctx.fillRect(0, 0, defaultImageSize, defaultImageSize);
-      ctx.font = (scale * 900) + 'px Helvetica';
+      ctx.font = fontsize + 'px Helvetica';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillStyle = 'white';  // a color name or by using rgb/rgba/hex values
