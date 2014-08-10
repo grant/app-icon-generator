@@ -10,7 +10,7 @@ var defaultImageSize = 1024; //px
 // 
 var sizes = [58, 80, 120];
 var numImages = 100;
-var save = false;
+var save = true;
 
 function canvasToImg() {
   var canvas = document.getElementById("canvas");
