@@ -1,7 +1,9 @@
 App Icon Generator
 ==================
 
-A tool to generate lots and lots of app icon images.
+A tool to generate lots and lots of app icon images (or just canvas-generated images in general).
+
+![Preview](https://cloud.githubusercontent.com/assets/744973/3868090/a3f180c6-2022-11e4-8240-4e41397802af.png)
 
 ## How it works:
 
