@@ -29,7 +29,7 @@ function canvasToImg() {
     for (var i = 0; i < numImages; ++i) {
       var color = colors[i].hexString();
       var text = i + 1;
-      var fontsize = (scale * 900);
+      var fontsize = (scale * 700);
       // Make the last one smaller and black
       if (i === numImages - 1) {
         fontsize *= 0.7;
@@ -37,7 +37,7 @@ function canvasToImg() {
       }
       ctx.fillStyle = color;
       ctx.fillRect(0, 0, defaultImageSize, defaultImageSize);
-      ctx.font = fontsize + 'px Helvetica';
+      ctx.font = '100 ' + fontsize + 'px Helvetica';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillStyle = 'white';  // a color name or by using rgb/rgba/hex values
