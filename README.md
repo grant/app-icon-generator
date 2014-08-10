@@ -3,6 +3,8 @@ App Icon Generator
 
 A tool to generate lots and lots of app icon images (or just canvas-generated images in general).
 
+In my case, I created html canvas images labeled 1-100 for iOS icons of size 58, 80, 120 pixels. This is modifyable to produce massive amounts of images of anything rendered with canvas.
+
 ![Preview](https://cloud.githubusercontent.com/assets/744973/3868116/a915cf16-2023-11e4-9cde-f604725ee878.png)
 
 ## How it works:
