@@ -14,10 +14,9 @@ A tool to generate lots and lots of app icon images (or just canvas-generated im
 ## Quickstart
 
 - Open `index.html` (optionally run `python -m SimpleHTTPServer`)
-- Copy the console output
-- Put it into a file `build/data.json`
-- Run `node index.js`
-- All the outputted files will be generated in `build/images`
+- Move the downloaded json file to `build/data.json`
+- Run `node index.js` to generate the images
+- All the outputted files will be generated in `build/image`
 
 ## Developing
 
